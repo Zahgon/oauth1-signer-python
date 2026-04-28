@@ -30,8 +30,4 @@ from cryptography.hazmat.primitives.serialization import pkcs12
 
 
 def load_signing_key(pkcs12_filename, password):
-    key_content = open(pkcs12_filename, 'rb')
-    private_key = key_content.read()
-    key_content.close()
-    key, certs, addcerts = pkcs12.load_key_and_certificates(private_key, password.encode("utf-8"))
-    return key
+    pass
